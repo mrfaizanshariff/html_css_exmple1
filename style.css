@@ -1,0 +1,109 @@
+* {
+  margin: 1px;
+  padding: 0;
+}
+body {
+  color: #444;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+  font-family: sans-serif;
+  margin-bottom: 15px;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+  margin-bottom: 25px;
+}
+.main-header {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+}
+.main-header h1 {
+  font-size: 30px;
+  color: #1098ad;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.post-header {
+  margin-bottom: 30px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+aside {
+  padding-top: 40px;
+  width: 700px;
+}
+h2 {
+  font-size: 34px;
+  /* font-weight: 400; */
+}
+p {
+  font-size: 28px;
+}
+h3 {
+  font-size: 32px;
+}
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.order-list {
+  font-size: 26px;
+}
+.ul-list {
+  font-size: 26px;
+  list-style-type: square;
+}
+.related h4 {
+  font-size: 28px;
+  text-align: center;
+}
+.related {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+#related-list {
+  padding-top: 40px;
+  list-style: none;
+  font-size: 28px;
+}
+/* Psuedo Classes*/
+li:first-child {
+  font-weight: bold;
+}
+/*Styling the hyper links */
+a:link {
+  text-decoration: none;
+  color: #1098ad;
+}
+
+a:visited {
+  /*color: rgb(199, 199, 199);*/
+  color: #1098ad;
+}
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dashed orangered;
+}
+a:active {
+  background-color: #1098ad;
+  font-style: italic;
+}
+
+.post-image {
+  width: 100%;
+}
