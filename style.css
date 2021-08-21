@@ -6,6 +6,7 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: 3px solid #1098ad;
+  position: relative;
 }
 
 h1,
@@ -47,7 +48,7 @@ article {
 }
 aside {
   padding-top: 40px;
-  width: 70%;
+  width: 80%;
 }
 h2 {
   font-size: 34px;
@@ -112,4 +113,11 @@ a:active {
 
 .post-image {
   width: 100%;
+}
+/*adding button element using absolute positioning relative to body*/
+button {
+  padding: 20px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
