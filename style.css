@@ -17,11 +17,29 @@ li {
   font-family: sans-serif;
   margin-bottom: 15px;
 }
+h1::first-letter {
+  font-style: normal;
+}
 h1,
 h2,
 h3 {
   color: #1098ad;
   margin-bottom: 25px;
+}
+
+h2 {
+  position: relative;
+}
+h2::after {
+  content: 'TOP';
+  /* padding: 10px; */
+  color: #444;
+  background-color: yellow;
+  font-size: 16px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+  display: inline-block;
 }
 
 .container {
