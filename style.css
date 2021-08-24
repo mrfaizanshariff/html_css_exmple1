@@ -44,7 +44,7 @@ h2::after {
 }
 
 .container {
-  width: 750px;
+  width: 1200px;
   margin: 0 auto;
 }
 .main-header {
@@ -160,5 +160,17 @@ button {
 .clearfix::after {
   content: '';
   display: block;
+  clear: both;
+}
+article {
+  width: 825px;
+  float: left;
+}
+
+.related {
+  width: 300px;
+  float: right;
+}
+footer {
   clear: both;
 }
