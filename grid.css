@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #444;
+  background-color: ;
+  font-family: sans-serif;
+  border-top: 3px solid #1098ad;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+  font-family: sans-serif;
+  margin-bottom: 15px;
+}
+h1::first-letter {
+  font-style: normal;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+  margin-bottom: 25px;
+}
+
+h2 {
+  position: relative;
+}
+h2::after {
+  content: 'TOP';
+  /* padding: 10px; */
+  color: #444;
+  background-color: yellow;
+  font-size: 16px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+  display: inline-block;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+}
+.main-header h1 {
+  font-size: 30px;
+  color: #1098ad;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.post-header {
+  margin-bottom: 30px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+aside {
+  padding-top: 40px;
+  /* width: 80%; */
+}
+h2 {
+  font-size: 34px;
+  /* font-weight: 400; */
+}
+p {
+  font-size: 28px;
+}
+h3 {
+  font-size: 32px;
+}
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.order-list {
+  font-size: 26px;
+}
+.ul-list {
+  font-size: 26px;
+  list-style-type: square;
+}
+.related h4 {
+  font-size: 28px;
+  text-align: center;
+}
+.related {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+#related-list {
+  padding-top: 40px;
+  list-style: none;
+  font-size: 28px;
+}
+/* Psuedo Classes*/
+li:first-child {
+  font-weight: bold;
+}
+/*Styling the hyper links */
+a:link {
+  text-decoration: none;
+  color: #1098ad;
+}
+
+a:visited {
+  /*color: rgb(199, 199, 199);*/
+  color: #1098ad;
+}
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dashed orangered;
+}
+a:active {
+  background-color: #1098ad;
+  font-style: italic;
+}
+
+.post-image {
+  width: 100%;
+}
+/*adding button element using absolute positioning relative to body*/
+button {
+  padding: 20px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+/*Float layouts*/
+/* .author-img {
+  float: left;
+}
+.author {
+  float: left;
+  margin: 15px 10px 10px 15px;
+}
+.title {
+  float: left;
+}
+.nav-bar {
+  margin: 20px;
+  word-spacing: 10px;
+  float: right;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+article {
+  width: 825px;
+  float: left;
+}
+
+.related {
+  width: 300px;
+  float: right;
+}
+footer {
+  clear: both;
+} */
+
+/* Flex Box */
+/* .main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.nav-bar a {
+  margin-right: 20px;
+}
+.author {
+  margin: 0;
+}
+.author_box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.related-post {
+  display: flex;
+  gap: 20px;
+
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+}
+.related-p {
+  margin: 0;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* .second-container {
+  display: flex;
+  gap: 75px;
+}
+article {
+  flex: 1;
+}
+aside {
+  flex: 0 0 300px;
+  align-self: flex-start;
+} */
+/*CSS  GRID */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1/-1;
+}
+article {
+  grid-column: 1 / span 3;
+}
+aside {
+  align-self: start;
+}
+footer {
+  justify-self: center;
+  grid-column: 1/-1;
+  grid-row: 3 / span 2;
+}
